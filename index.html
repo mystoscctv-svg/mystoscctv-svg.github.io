@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>mystoscctv · Instalación, mantención y venta de CCTV</title>
+<meta name="description" content="Instalación, mantención y venta de cámaras de seguridad análogas e IP. Control de acceso, cerco eléctrico y seguridad electrónica en la Región Metropolitana.">
+<link rel="icon" type="image/png" href="logo-64.png">
+<style>
+:root{box-sizing:border-box;--bg:#0a0c0d;--card:#14181a;--line:#222a2d;--tx:#e8eef0;--mut:#8fa0a5;--red:#c0302f;--tq:#4f7be0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);background:rgba(10,12,13,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:20px;letter-spacing:.3px}.logo{display:flex;align-items:center;gap:10px}.logo img{width:40px;height:40px;border-radius:8px}.logo i{color:var(--tq);font-style:normal}
+nav a{margin-left:18px;color:var(--mut);font-size:14px}nav a:hover{color:var(--tq)}
+@media(max-width:700px){nav a:not(.btn){display:none}}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 22px;border-radius:8px;font-weight:600;border:0;cursor:pointer;font-size:15px}
+.btn.o{background:transparent;border:1px solid var(--tq);color:var(--tq)}
+nav .btn{padding:8px 14px;color:#fff;margin-left:18px}
+.hero{padding:64px 0 52px;background:radial-gradient(600px 300px at 80% 0,rgba(79,123,224,.18),transparent),radial-gradient(500px 300px at 0 100%,rgba(192,48,47,.15),transparent)}
+.hero .w{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.tag{color:var(--tq);font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:12px 0 16px}h1 span{color:var(--red)}
+.hero p{color:var(--mut);font-size:18px;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero img{width:100%;max-height:440px;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 8px}.sub{color:var(--mut);margin:0 0 28px}
+.g{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.c h3{margin:0 0 8px;font-size:18px}.c p{margin:0;color:var(--mut);font-size:15px}
+.ic{font-size:26px;margin-bottom:10px}.c.k{border-top:3px solid var(--tq)}.c.r{border-top:3px solid var(--red)}
+ul{margin:10px 0 0;padding-left:18px;color:var(--mut);font-size:15px}li{margin:4px 0}
+.steps{counter-reset:s}.steps .c::before{counter-increment:s;content:counter(s);display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--tq);color:#001;font-weight:700;align-items:center;justify-content:center;margin-bottom:10px}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.gal figure{margin:0;position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;background:var(--card)}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .3s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;font-size:13px;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:20;padding:16px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:82vh;border-radius:8px}#lb p{color:var(--mut);margin:12px 0 0}
+form{display:grid;gap:12px;max-width:560px}
+input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--tx);font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--tq)}
+.info p{margin:6px 0;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:24px 0 80px;color:var(--mut);font-size:14px;text-align:center}
+footer b{color:var(--tx)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--tq);color:#001;font-weight:700;padding:14px 18px;border-radius:30px;box-shadow:0 4px 16px rgba(0,0,0,.5);z-index:6}
+</style>
+</head>
+<body>
+<header><div class="w"><a href="#top" class="logo"><img src="logo.png" alt="Logo mystoscctv"> <span>mystos<i>cctv</i></span></a>
+<nav><a href="#servicios">Servicios</a><a href="#equipos">Equipos</a><a href="#proyectos">Proyectos</a><a href="#proceso">Proceso</a><a href="#contacto" class="btn">Cotizar</a></nav></div></header>
+
+<div class="hero" id="top"><div class="w">
+<div>
+<div class="tag">CCTV · Seguridad electrónica</div>
+<h1>Protege lo que más importa con <span>cámaras de seguridad</span> bien instaladas</h1>
+<p>Instalación, mantención y venta de equipos CCTV análogos e IP para hogares, comercios y edificios. Asesoría real, trabajo ordenado y garantía.</p>
+<div class="cta"><a class="btn" href="#contacto">Solicitar cotización</a><a class="btn o" href="#proyectos">Ver proyectos</a></div>
+</div>
+<img src="p01.jpg" alt="Cámaras Dahua instaladas en poste" fetchpriority="high">
+</div></div>
+
+<section id="servicios"><div class="w">
+<h2>Nuestros servicios</h2><p class="sub">Todo lo que necesitas para un sistema de seguridad funcionando de verdad.</p>
+<div class="g">
+<div class="c r"><div class="ic">🛠️</div><h3>Instalación</h3><p>Proyecto a medida, cableado limpio, configuración de grabador y acceso remoto desde tu celular.</p></div>
+<div class="c r"><div class="ic">🔧</div><h3>Mantención</h3><p>Revisión preventiva y correctiva: limpieza de lentes, pruebas de grabación, fuentes y cableado.</p></div>
+<div class="c r"><div class="ic">📦</div><h3>Venta de equipos</h3><p>Cámaras, DVR/NVR, discos, fuentes y accesorios, análogos e IP, con asesoría para elegir bien.</p></div>
+<div class="c k"><div class="ic">🔄</div><h3>Ampliaciones y migración</h3><p>Sumamos cámaras o pasamos tu sistema análogo a IP aprovechando lo que ya tienes.</p></div>
+<div class="c k"><div class="ic">🚪</div><h3>Control de acceso</h3><p>Citofonía, video porteros, electrocerraduras, portones, barreras y control vehicular con Tag.</p></div>
+<div class="c k"><div class="ic">⚡</div><h3>Cerco eléctrico e integración</h3><p>Integramos cámaras, alarmas y cerco eléctrico en un solo sistema de seguridad.</p></div>
+</div></div></section>
+
+<section id="equipos"><div class="w">
+<h2>Equipamiento: análogo e IP</h2><p class="sub">Te ayudamos a elegir según tu presupuesto y necesidad.</p>
+<div class="g">
+<div class="c r"><h3>Sistemas análogos (HD)</h3><ul><li>Económicos y fáciles de ampliar</li><li>Aprovechan cableado coaxial existente</li><li>Ideal para hogares y locales pequeños</li><li>Cámaras bala y domo, DVR híbridos</li></ul></div>
+<div class="c k"><h3>Sistemas IP</h3><ul><li>Mayor resolución y detalle de imagen</li><li>Alimentación por red (PoE), menos cables</li><li>Detección inteligente y audio</li><li>Cámaras bala, domo, PTZ y NVR</li></ul></div>
+<div class="c"><h3>Accesorios</h3><ul><li>Discos duros de vigilancia</li><li>Fuentes, conectores, baluns</li><li>Switches PoE y gabinetes</li><li>Monitores y UPS</li></ul></div>
+</div></div></section>
+
+<section id="proyectos"><div class="w">
+<h2>Proyectos realizados</h2><p class="sub">Trabajos reales de instalación, mantención y configuración. Toca una foto para verla en grande.</p>
+<div class="gal" id="gal"></div>
+</div></section>
+
+<section id="proceso"><div class="w">
+<h2>Cómo trabajamos</h2><p class="sub">Un proceso simple, de la consulta a la entrega.</p>
+<div class="g steps">
+<div class="c"><h3>Contacto y visita</h3><p>Nos cuentas qué quieres proteger y evaluamos el lugar.</p></div>
+<div class="c"><h3>Cotización</h3><p>Propuesta clara con equipos, instalación y plazos.</p></div>
+<div class="c"><h3>Instalación</h3><p>Trabajo prolijo, pruebas y configuración de acceso remoto.</p></div>
+<div class="c"><h3>Soporte</h3><p>Capacitación de uso, garantía y mantención posterior.</p></div>
+</div></div></section>
+
+<section id="contacto"><div class="w">
+<h2>Cotiza ahora</h2><p class="sub">Completa el formulario y se enviará por WhatsApp.</p>
+<div class="g" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start">
+<form id="f">
+<input id="n" placeholder="Tu nombre" required>
+<select id="s"><option>Instalación nueva</option><option>Mantención</option><option>Compra de equipos</option><option>Ampliación o migración</option><option>Control de acceso / cerco eléctrico</option></select>
+<select id="t"><option>Sistema análogo</option><option>Sistema IP</option><option>No estoy seguro</option></select>
+<textarea id="m" rows="4" placeholder="Cuéntanos qué necesitas (cantidad de cámaras, lugar, etc.)"></textarea>
+<button class="btn" type="submit">Enviar por WhatsApp</button>
+</form>
+<div class="info c"><h3>Contacto directo</h3>
+<p><b>WhatsApp / Teléfono:</b><br><a href="tel:+56927004308">+56 9 2700 4308</a></p>
+<p><b>Email:</b><br><a href="mailto:mystoscctv@gmail.com">mystoscctv@gmail.com</a></p>
+<p><b>Facebook:</b><br>mystoscctv</p>
+<p><b>Cobertura:</b><br>Región Metropolitana</p></div>
+</div></div></section>
+
+<footer><div class="w"><img src="logo.png" alt="" style="width:56px;border-radius:10px;margin-bottom:10px"><br><b>mystoscctv</b> · Seguridad de servicios especializados<br>© 2026 Todos los derechos reservados</div></footer>
+<a class="wa" href="https://wa.me/56927004308">WhatsApp</a>
+<div id="lb"><img alt=""><p></p></div>
+<script>
+var P=[["01","Cámaras Dahua instaladas en poste"],["02","Mantención de portón automático y alarma"],["03","Revisión de central de portón"],["06","Limpieza de cámara junto a cerco eléctrico"],["08","Mantención de cámara exterior en altura"],["17","Limpieza de cámaras Hikvision"],["07","Mantención de fuente de poder para cámaras"],["09","Grabador Dahua y switch en gabinete"],["11","Rack con grabadores Dahua"],["16","Ordenamiento de cableado en grabador"],["12","Revisión de central de intrusión"],["13","Mantención de centrales y fuentes"],["14","Medición de voltaje en fuentes"],["04","Monitoreo de múltiples cámaras"],["05","Configuración de canales del grabador"],["15","Sala de control con 4 monitores"]];
+var g=document.getElementById('gal'),lb=document.getElementById('lb');
+P.forEach(function(p){var f=document.createElement('figure'),i=new Image();i.src='p'+p[0]+'.jpg';i.alt=p[1];i.loading='lazy';var c=document.createElement('figcaption');c.textContent=p[1];f.appendChild(i);f.appendChild(c);f.onclick=function(){lb.firstChild.src=i.src;lb.firstChild.alt=p[1];lb.lastChild.textContent=p[1];lb.classList.add('on')};g.appendChild(f)});
+lb.onclick=function(){lb.classList.remove('on')};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var v=function(i){return document.getElementById(i).value};
+var t='Hola, soy '+v('n')+'. Necesito: '+v('s')+' ('+v('t')+'). '+v('m');
+window.open('https://wa.me/56927004308?text='+encodeURIComponent(t),'_blank')});
+</script>
+</body>
+</html>
